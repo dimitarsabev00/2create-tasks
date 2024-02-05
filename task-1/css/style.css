@@ -1,0 +1,344 @@
+/* Define Inter-Black */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Black.ttf") format("truetype");
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+/* Define Inter-ExtraBold */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-ExtraBold.ttf") format("truetype");
+  font-weight: 800; /* Extra Bold */
+  font-style: normal;
+}
+
+/* Define Inter-Bold */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* Define Inter-SemiBold */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* Semi-Bold */
+  font-style: normal;
+}
+
+/* Define Inter-Medium */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+/* Define Inter-Regular */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+/* Define Inter-Light */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Light.ttf") format("truetype");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+/* Define Inter-ExtraLight */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-ExtraLight.ttf") format("truetype");
+  font-weight: 200; /* Extra Light */
+  font-style: normal;
+}
+
+/* Define Inter-Thin */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Thin.ttf") format("truetype");
+  font-weight: 100; /* Thin */
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+html,
+body,
+#root,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+div,
+a,
+input,
+textarea,
+button {
+  font-family: "Inter", sans-serif;
+  color: black;
+  font-weight: 400;
+}
+
+.page_container header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 284px;
+  padding-right: 276px;
+  align-items: center;
+}
+.page_container header ul {
+  display: flex;
+  gap: 32px;
+}
+.page_container header .header-logo {
+  background-image: url("../images/header-logo.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 155px;
+  height: 36px;
+}
+.page_container .section-with-photo-and-content {
+  width: 100%;
+  height: 518px;
+  /* background-image: url("../images/bg-image.png"); */
+  transition: 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.page_container .section-with-photo-and-content .inner-content-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 133px;
+  bottom: 133px;
+  left: 284px;
+  width: 705px;
+}
+.page_container .section-with-photo-and-content .inner-content-container h2 {
+  font-weight: 800;
+  font-size: 64px;
+  color: #ffffff;
+}
+.page_container .section-with-photo-and-content .inner-content-container p {
+  margin-top: 16px;
+  color: white;
+  font-size: 16px;
+  line-height: 25.6px;
+  font-weight: 300;
+}
+.page_container
+  .section-with-photo-and-content
+  .inner-content-container
+  .custom-button {
+  border-radius: 32px;
+  background-color: #243a5a;
+  display: flex;
+  width: auto;
+  width: 160px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  margin-top: 32px;
+  cursor: pointer;
+}
+.page_container
+  .section-with-photo-and-content
+  .inner-content-container
+  .custom-button:hover {
+  background-color: #2DF8BB;
+  color: #243A5A;
+}
+.page_container
+  .section-with-photo-and-content
+  .inner-content-container
+  .custom-button.clicked {
+    transform: scale(1.1);
+
+}
+.page_container .contact-section .inner-content-container {
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 284px;
+  gap: 294px;
+  margin-top: 106px;
+  margin-bottom: 106px;
+}
+.page_container .contact-section .inner-content-container h2 {
+  font-weight: 600;
+  font-size: 48px;
+  color: black;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  color: #243a5a;
+}
+.page_container .contact-section .inner-content-container h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: black;
+  color: #243a5a;
+}
+.page_container .contact-section .inner-content-container p {
+  margin-bottom: 49px;
+  font-weight: 300;
+  color: #566c8c;
+}
+.page_container
+  .contact-section
+  .inner-content-container
+  .email-and-phoneNumber-container {
+  display: flex;
+  gap: 65px;
+}
+.page_container
+  .contact-section
+  .inner-content-container
+  .email-and-phoneNumber-container
+  div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #566c8c;
+  font-weight: 300;
+}
+.page_container .contact-section .inner-content-container hr {
+  width: 295px;
+  color: #889ebe;
+  margin: 42px 0px;
+}
+.page_container .contact-section .inner-content-container .working-hours-time {
+  margin-top: 32px;
+}
+.page_container footer {
+  background-color: #243a5a;
+}
+.page_container footer .inner-content-footer {
+  display: flex;
+  padding-top: 64px;
+  padding-bottom: 32px;
+  padding-left:240px ;
+  padding-right:240px ;
+  flex-direction: column;
+}
+.page_container footer .inner-content-footer .top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #889EBE;
+  padding-bottom: 52px;
+}
+.page_container footer .inner-content-footer .top .footer-logo {
+  background-image: url("../images/footer-logo.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 155px;
+  height: 36px;
+}
+.page_container footer .inner-content-footer .top ul {
+  display: flex;
+  gap: 34px;
+}
+.page_container footer .inner-content-footer .top ul li {
+  color: white;
+  font-weight: 300;
+}
+.page_container footer .inner-content-footer .bottom .left p  {color: white;}
+.page_container footer .inner-content-footer .bottom .left  {
+  display: flex;
+  margin-top: 30px;
+  gap: 6px;
+  align-items: center;
+}
+
+.page_container footer .inner-content-footer .bottom .left .copyright-icon{
+  background-image: url("../images/c-icon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.page_container footer .inner-content-footer .bottom .social-icons {
+  margin-top: 18px;
+  display: flex;
+  gap: 16px;
+  
+}
+.page_container footer .inner-content-footer .bottom .social-icons .icon-twitter {
+  background-image: url("../images/twitter.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+
+}
+.page_container footer .inner-content-footer .bottom .social-icons .icon-instagram {
+  background-image: url("../images/instagram.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+
+}
+.page_container footer .inner-content-footer .bottom .social-icons .icon-linkedLn {
+  background-image: url("../images/linkedLn.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+
+}
+.page_container footer .inner-content-footer .bottom .social-icons .icon-reddit {
+  background-image: url("../images/reddit.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+
+}
+.page_container footer .inner-content-footer .bottom  {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="page_container">
+      <header>
+        <div class="header-logo"></div>
+        <ul>
+          <li>HOME</li>
+          <li>LINK 1</li>
+          <li>LINK 2</li>
+        </ul>
+      </header>
+      <section class="section-with-photo-and-content">
+        <div class="inner-content-container">
+          <h2>Let’s talk!</h2>
+          <p>
+            Have a challenge? Want to develop a new source for products or
+            services? Or simply want a new perspective from an experienced
+            veteran? Drop us a line or give us a call. Put our superior customer
+            service and speedy response time to the test. We’re ready to help.
+          </p>
+          <div class="custom-button">CALL US NOW</div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="inner-content-container">
+          <div class="left">
+            <h2>Contact</h2>
+            <p>
+              Tell us about your project and let’s create something together.
+            </p>
+            <div class="email-and-phoneNumber-container">
+              <div>
+                <div>Email:</div>
+                <div>Phone:</div>
+              </div>
+              <div>
+                <div>contact@business.com</div>
+                <div>555-555-555</div>
+              </div>
+            </div>
+            <hr />
+            <h3>Working Hours</h3>
+            <p class="working-hours-time">MON-FRI: 9:00 AM - 6:00 PM</p>
+          </div>
+          <div class="right">
+            <iframe
+              width="600"
+              height="450"
+              style="border: 0"
+              loading="lazy"
+              allowfullscreen
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.4497506012666!2d27.91318711547556!3d43.207890679140484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa82f1e3a1cd13%3A0x400ad2928efc20!2sVarna%20City%20Center!5e0!3m2!1sen!2sus!4v1643782531928!5m2!1sen!2sus"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="inner-content-footer">
+          <div class="top">
+            <div class="footer-logo"></div>
+            <ul>
+              <li>Lorem Ipsum Link</li>
+              <li>Lorem Ipsum Link 2</li>
+              <li>Lorem Ipsum Link 3</li>
+            </ul>
+          </div>
+          <div class="bottom">
+            <div class="left">
+              <div class="copyright-icon"></div>
+              <p>Brand name, 2022</p>
+            </div>
+
+            <div class="social-icons">
+              <div class="icon-twitter"></div>
+              <div class="icon-instagram"></div>
+              <div class="icon-linkedLn"></div>
+              <div class="icon-reddit"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script defer>
+      // Function to generate a random background image URL
+      function getRandomImage() {
+        const images = [
+          "./images/bg-image-1.png",
+          "./images/bg-image-2.png",
+          "./images/bg-image-3.png",
+          "./images/bg-image-4.png",
+          "./images/bg-image-5.png",
+        ];
+        const randomIndex = Math.floor(Math.random() * images.length);
+        return images[randomIndex];
+      }
+
+      // Function to set a new background image on the div
+      function setRandomBackground() {
+        const myRandomImage = document.querySelector(
+          ".section-with-photo-and-content"
+        );
+        const randomImage = getRandomImage();
+        console.log(myRandomImage);
+        myRandomImage.style.backgroundImage = `url('${randomImage}')`;
+      }
+
+      // Set initial background on page load
+      setRandomBackground();
+
+      // Set a new background on every page refresh
+      window.addEventListener("load", setRandomBackground);
+    </script>
+  </body>
+</html>
+
